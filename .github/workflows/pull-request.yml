@@ -16,7 +16,7 @@ defaults:
 
 jobs:
   docker:
-    if: github.repository == 'hectorqin/reader'
+    if: github.repository == 'guicaiyue/reader'
     runs-on: ubuntu-latest
     steps:
       -
