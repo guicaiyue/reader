@@ -75,7 +75,7 @@ val compileOnly by configurations.getting {
 }
 
 dependencies {
-    val kotlin_version: String by extra{"1.5.21"}
+    val kotlin_version: String by extra{"1.8.22"}
     // val kotlin_version: String by extra
     implementation("org.springframework.boot:spring-boot-starter")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
