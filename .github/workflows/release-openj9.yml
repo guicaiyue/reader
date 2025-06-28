@@ -28,7 +28,6 @@ jobs:
         with:
           distribution: 'adopt-openj9'
           java-version: '8'
-          cache: 'gradle'
       -
         name: Build Java
         run:
