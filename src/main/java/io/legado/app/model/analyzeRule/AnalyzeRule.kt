@@ -1,6 +1,6 @@
 package io.legado.app.model.analyzeRule
 
-import com.script.SimpleBindings
+import javax.script.SimpleBindings
 import io.legado.app.constant.AppConst.SCRIPT_ENGINE
 import io.legado.app.constant.AppPattern.JS_PATTERN
 import io.legado.app.data.entities.BaseBook

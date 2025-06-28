@@ -1,6 +1,6 @@
 package io.legado.app.data.entities
 
-import com.script.SimpleBindings
+import javax.script.SimpleBindings
 import io.legado.app.utils.Base64
 import io.legado.app.constant.AppConst
 import io.legado.app.help.CacheManager

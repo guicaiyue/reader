@@ -19,10 +19,13 @@ buildscript {
 }
 plugins {
     id("org.springframework.boot") version "2.7.18"
+    id("io.spring.dependency-management") version "1.0.15.RELEASE"
+    id("org.jetbrains.kotlin.jvm") version "1.8.22"
     id("application")
     id("org.openjfx.javafxplugin") version "0.0.9"
     id("org.jetbrains.kotlin.plugin.spring") version "1.8.22"
     id("maven-publish")
+    id("de.undercouch.download") version "5.2.0"
 }
 
 configure<JavaFXOptions> {
