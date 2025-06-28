@@ -14,15 +14,15 @@ buildscript {
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
-        classpath("io.github.fvarrui:javapackager:1.6.5")
+        classpath("io.github.fvarrui:javapackager:1.7.2")
     }
 }
 plugins {
-    id("org.springframework.boot") version "2.1.6.RELEASE"
-    id("java")
+    id("org.springframework.boot") version "2.7.18"
     id("application")
     id("org.openjfx.javafxplugin") version "0.0.9"
-    id("org.jetbrains.kotlin.plugin.spring") version "1.3.61"
+    id("org.jetbrains.kotlin.plugin.spring") version "1.5.21"
+    id("maven-publish")
 }
 
 configure<JavaFXOptions> {
@@ -51,8 +51,8 @@ configure<JavaFXOptions> {
     }
 }
 
-apply(plugin = "io.spring.dependency-management")
-apply(plugin = "kotlin")
+
+
 apply(plugin = "io.github.fvarrui.javapackager.plugin")
 
 group = "com.htmake"
@@ -68,7 +68,6 @@ repositories {
     maven("https://jitpack.io")
     maven("https://gitlab.com/api/v4/projects/26729549/packages/maven")
     google()
-    jcenter()
 }
 
 val compileOnly by configurations.getting {
