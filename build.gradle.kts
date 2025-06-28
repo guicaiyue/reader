@@ -6,8 +6,8 @@ import io.github.fvarrui.javapackager.model.WindowsConfig
 import de.undercouch.gradle.tasks.download.Download
 
 buildscript {
-    val kotlin_version: String by extra{"1.5.21"}
-    // extra["kotlin_version"] = "1.5.21"
+    val kotlin_version: String by extra{"1.8.22"}
+    // extra["kotlin_version"] = "1.8.22"
     repositories {
 	    mavenLocal()
         mavenCentral()
@@ -21,7 +21,7 @@ plugins {
     id("org.springframework.boot") version "2.7.18"
     id("application")
     id("org.openjfx.javafxplugin") version "0.0.9"
-    id("org.jetbrains.kotlin.plugin.spring") version "1.5.21"
+    id("org.jetbrains.kotlin.plugin.spring") version "1.8.22"
     id("maven-publish")
 }
 
