@@ -98,6 +98,11 @@ compileKotlin {
 springBoot {
     mainClass = 'com.htmake.reader.ReaderApplicationKt'
 }
+
+jar {
+    enabled = false
+    archiveClassifier = ''
+}
 compileTestKotlin {
     kotlinOptions {
         jvmTarget = "1.8"
